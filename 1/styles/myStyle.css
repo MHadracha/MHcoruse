@@ -1,0 +1,595 @@
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('../fonts/OpenSansHebrew-Bold.eot');
+    src: url('../fonts/OpenSansHebrew-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'open-sans-light';
+    src: url('../fonts/OpenSansHebrew-Light.eot');
+    src: url('../fonts/OpenSansHebrew-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/OpenSansHebrew-Regular.eot');
+    src: url('../fonts/OpenSansHebrew-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Regular.ttf') format('truetype');
+}
+
+
+/*התחלת עיצוב האתר*/
+
+body {
+    margin: 0 auto;
+    direction: rtl;
+    background-image: url("../images/background.png");
+     background-repeat:repeat-y;
+    background-size: cover;
+    
+}
+
+
+/*עיצוב הקונטיינר*/
+
+#container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+    height: 4000px;
+    margin-top: 34px;
+    -webkit-box-shadow: 0 6px 10px 0 #D6D6D6;
+    box-shadow: 0 6px 10px 0 #D6D6D6;
+}
+
+
+/*עיצוב ה-header*/
+
+#skip {
+    position: absolute;
+    opacity: 0;
+    font-family: 'open-sans';
+}
+
+#skip:focus,
+#skip:active {
+    opacity: 1;
+    color: white;
+    font-size: 13pt;
+}
+
+#logoarea {
+    height: 150px;
+    margin: 0;
+    width: 100%;
+    background-image: url("../images/logoarea.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*עיצוב תפריט הניווט*/
+
+.menu {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    !important opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 90;
+}
+
+.activeAndHover{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'open-sans';
+    font-size: 10.5pt;
+    background-color: #424564;
+    color: white;
+}
+
+.activeAndHover:focus {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'open-sans';
+    font-size: 10.5pt;
+    background-color: #424564;
+    color: white;
+}
+
+.unActiveAndHover {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family:'open-sans';
+    font-size: 10.5pt;
+    background-color: white;
+    color: black;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    opacity: 0.95;
+    transition: opacity 0.5s;
+}
+
+.menu>ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>ul li {
+    list-style: none;
+    float: right;
+    text-align: center;
+    width: 16.6667%;
+    width: calc(100% / 6);
+    box-sizing: border-box;
+}
+
+.menu>ul li a:hover {
+    background-color: #424564;
+    color: white;
+}
+
+.menu>ul li ul {
+    display: none;
+    position: absolute;
+    background-color: green;
+    width: 16.66666%;
+}
+
+.menu>ul li ul li {
+    display: block;
+    background-color: white;
+    width: 100%;
+}
+
+.menu>ul li ul li a {
+    display: block;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'open-sans';
+    font-size: 10.5pt;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.focusClass {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family:'open-sans';
+    font-size: 10.5pt;
+    background-color: #424564;
+    color: white;
+}
+
+.blurClass {
+    display: none;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family:'open-sans';
+    font-size: 10.5pt;
+    background-color: #424564;
+    color: white;
+}
+
+
+
+/*עיצוב והתאמת גדלי sections */
+
+#doifitDiv {
+    width: 960px;
+    height: 1px;
+    visibility: hidden;
+}
+
+#hp {
+    width: 960px;
+    height:400px;
+}
+#hasara {
+    width: 960px;
+    height:300px;
+}
+#atrim {
+    width: 960px;
+    height:1100px;
+}
+#tacnim {
+    width: 960px;
+    height:1900px;
+}
+#mifoy{
+    margin-right:280px;
+    width:360px;
+    height:200px;
+}
+
+#mabo{
+    margin-top: 50px;
+   width: 960px;
+    height:200px;
+    margin-right:280px;
+}
+#alfa{
+   width: 890px;
+    height:250px;
+    margin-right: 60px;
+} 
+#alfa2 {
+   width: 850px;
+    height: 300px;
+    margin-top: 20px;
+   padding-bottom: 100px;
+    margin-right: 60px;
+} 
+#pitohach{
+ width: 960px;
+    height:250px;
+    margin-top: 100px;
+}
+#pitohach1{
+ width: 960px;
+    height:250px;
+ margin-right:280px; 
+}
+#sviva{
+ width: 960px;
+    height:200px;
+ margin-right:280px; 
+}
+#nihol{
+ width: 960px;
+    height:200px;
+ margin-right:195px; 
+}
+#hadsanot
+{
+ width: 960px;
+    height:200px;
+ margin-right:195px; 
+}
+/*עיצוב parallax*/
+
+.parallax1 {
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+}
+
+#do-i-fit-title {
+    background-image: url("../images/pra.png");
+   
+}
+#thasara {
+    background-image: url("../images/pra.png");
+   
+}
+#tatrim {
+    background-image: url("../images/pra.png");
+   
+}
+#loaca {
+    background-image: url("../images/pra.png");
+   
+}
+.parallaxTitle {
+    font-family: 'open-sans-light';
+    font-size: 50pt;
+    color: white;
+    line-height: 300px;
+    margin-right: 340px;
+    text-shadow: 3px 3px 2px #838383;
+}
+
+
+/*עיצוב תכני עמוד*/
+
+.parallextext {
+    background-color: white;
+}
+
+#hp p{
+    font-family: 'open-sans';
+    font-size: 13pt;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 100px;
+     text-align: justify;
+}
+.parallextext p{
+    font-family: 'open-sans';
+    font-size: 13pt;
+    line-height: 30px;
+    margin-top: 10px;
+     text-align: justify;
+}
+
+#atrim a{
+    margin-top: 20px;
+    font-size: 20pt;
+    font-family: 'open-sans-bold';
+    color: #424564;
+    display: block;
+    text-align: center;
+}
+#atrim p{
+    margin-right: 35px;
+    font-size: 13pt;
+    font-family: 'open-sans';
+    display:inline-block;
+   
+}
+.atrima{
+    width: 450px;
+    height: 150px;
+    text-align: justify;
+    float: right;
+    margin-right: 20px;
+}
+.atrima1{
+    width: 450px;
+    height: 250px;
+    text-align: justify;
+    float: right;
+    margin-right: 20px;
+}
+.parallextext h1 ,h3{
+    font-size: 30pt;
+    font-family: 'open-sans-bold';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #424564;
+    display: block;
+   
+}
+.parallextext li{ list-style: none;
+}
+
+.parallextext li a{
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto;
+    margin: 10px;
+    color: white;
+    text-align: center;  
+}
+
+.riboa1{
+ background-image: url(../images/riboa.jpg.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin: 10px;
+    color: white;
+    text-align: center; 
+    float: right;
+}
+
+.riboa2{
+ background-image: url(../images/riboa2.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    float: right;
+}
+.riboa3{
+ background-image: url(../images/riboa3.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    float: right;
+}
+
+.riboa4{
+ background-image: url(../images/riboa4.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    float: right;
+}
+.riboa5{
+ background-image: url(../images/riboa5.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    float: right;
+}
+.riboa6{
+ background-image: url(../images/riboa6.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    float: right;
+}
+
+.riboa7{
+ background-image: url(../images/riboa7.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    float: right;
+}
+
+.riboa8{
+ background-image: url(../images/riboa8.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    font-family: 'open-sans';
+    font-size: 23pt;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    float: right;
+}
+/*עיצוב מעברי תכנים*/
+
+
+
+#hasara {
+    height: 300px;
+    -webkit-box-shadow: 0 6px 10px 0 #D6D6D6;
+    box-shadow: 0 6px 10px 0 #D6D6D6;
+}
+
+#how-to-deal {
+    margin-top: 8px;
+    background-color: #f4f4f4;
+    padding-bottom: 25px;
+    box-shadow: 0 6px 10px 0 #D6D6D6;
+    -webkit-box-shadow: 0 6px 10px 0 #D6D6D6;
+}
+
+/*עיצוב תוכן וטקסטים*/
+
+.parallextext p, h1, h3, h4 {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
+.parallextext a {
+    margin-right: 20px;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.parallextext img:hover {
+    opacity: 0.8;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+
+
+
+/*עמוד אודות*/
+
+#about h1 {
+    font-size: 30pt;
+    font-family: 'open-sans-bold';
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #424564;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#about {
+    height: 1600px;
+    -webkit-box-shadow: 0 6px 10px 0 #D6D6D6;
+    box-shadow: 0 6px 10px 0 #D6D6D6;
+}
+
+#hit-logo {
+    margin-top: 30px;
+}
+
+#about a:hover {
+    color: black;
+}
+
+#about a:focus {
+    color: black;
+}
+
+
+/*עיצוב פוטר*/
+

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="he">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta charset="utf-8" />
+    <title>קורס מפתחי הדרכה 2017</title>
+    <meta name="description" content="אתר הקורס מפתחי הדרכה לשנת 2017 בביהס הצבאי לפיתוח, ניהול והוראת הדרכה " />
+    <meta name="keywords" content="ביהס להדרכה, מפתחי הדרכה 2017, קורס מפתחי הדרכה " />
+    <meta name="author" content="Inbar Goldberg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <!--Animate wow (CSS+Scripts)-->
+    <link rel="stylesheet" href="css/libs/animate.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+
+    <!-- Other Scripts -->
+
+    <script src="jScripts/Site_JavaScript.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var offPix = 100;
+
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - offPix
+                    }, 1500, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var os = $('#div1').offset().top;
+            var ht = $('#div1').height();
+            if (scroll > os + ht) {
+                $('#div2').addClass('blue');
+            }
+        });
+
+    </script>
+
+
+
+</head>
+
+<body onload="tab_nav()">
+
+
+
+    <!--לוגו + תפריט ניווט-->
+
+    <header>
+
+
+        <div id="logoarea" class="row small center wow fadeInDown top__element">
+
+
+        </div>
+        <nav class="menu" id="menuNav">
+            <ul class="row small center wow fadeInDown top__element">
+                <li> <a href="#hp" class="unActiveAndHover"> דף הבית </a> </li>
+                <li id="doifitLi"> <a id="doifitA" href="#do-i-fit-title" class="unActiveAndHover"> תכני הכשרה</a>
+                    <ul>
+                        <li><a href="#pitohach">פיתוח סגלים</a></li>
+                        <li><a href="#sviva">סביבת למידה</a></li>
+                        <li><a href="#nihol">ניהול הדרכה</a></li>
+                        <li><a href="#hadsanot">חדשנות בלמידה</a></li>
+                    </ul>
+                </li>
+                <li id="beforeAdoptingLi">
+                    <a id="beforeAdoptingA" href="#thasara" class="unActiveAndHover"> תכני העשרה </a>
+
+                </li>
+                <li id="duringLi">
+                    <a id="duringA" href="#tatrim" class="unActiveAndHover">אתרים מומלצים </a>
+                </li>
+                <li id="afterLi">
+                    <a id="afterA" href="#loaca" class="unActiveAndHover">לוח שיתוף</a>
+                </li>
+                <li id="contactLi"> <a href="#" id="contactA" class="unActiveAndHover"> לו"ז </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--תחילת קונטיינר-->
+
+    <div id="container">
+
+        <section class="parallextext" id="hp">
+            <h1 class="row small center wow fadeInDown top__element">קורס מפתחי הדרכה 2017</h1>
+            <p class="row small center wow fadeInDown top__element"> ברוכים הבאים לאתר הקורס.<br> האתר הוקם על מנת ללוות את תהליך הלמידה שלכם גם בכיתה וגם בבית, מתוך הבנה כי תזדקקו לגישה לתכנים גם בערב <br> (זהו לא רמז ולא המלצה, תאמינו לנו- אתם הולכים לעבודה קשה...) ככלל, תכני הלימוד יעלו בהתאם להתפתחות הקורס- בכוונה תחילה, אז אל תנסו להקדים את המאוחר. תכני העשרה תמצאו בו גם עכשיו. יש באתר גם פורום שישמש אותנו הן ללמידה בחברותא (חברותא דיגיטאלית היא גם חברותא..) והן לטובת מטלות קריאה שונות אליהן תידרשו להתייחס תו"כ הקורס. שימו לב- המטלה הראשונה כבר שם, מוזמנים להיכנס!
+            </p>
+            <p class="row small center wow fadeInDown top__element">סיגל, זיווה וקרן
+                <br>צוות הקורס</p>
+
+        </section>
+        <!--תוכן-->
+
+        <div id="doifitDiv"></div>
+        <section class="parallax1" id="do-i-fit-title">
+            <h2 class="parallaxTitle">תכני הכשרה</h2>
+        </section>
+
+        <section class="parallextext" id="tacnim">
+
+            <section id="mabo" class="row small center wow fadeInDown top__element">
+                <ul>
+                    <li> <a class="riboa1" href="#">מבוא ללמידה</a></li>
+                    <li> <a class="riboa1" href="#">למידה רבת עוצמה</a></li>
+
+                </ul>
+            </section>
+            <section id="mifoy">
+                <ul class="row small center wow fadeInDown top__element">
+                    <li><a class="riboa2" href="#">מבוא ללמידה</a></li>
+                    <li><a class="riboa2" href="#">למידה רבת עוצמה</a></li>
+                </ul>
+            </section>
+
+            <section id="alfa">
+                <ul class="row small center wow fadeInDown top__element">
+                    <li><a class="riboa3" href="#">איפיון ראשוני</a></li>
+                    <li><a class="riboa3" href="#">ניתוח מערכת הדרכתית- חסר</a></li>
+                    <li><a class="riboa3" href="#">פתרון עקרוני</a></li>
+                    <li><a class="riboa4" href="#">בניית תכנית אופרטיבית</a></li>
+                    <li><a class="riboa3" href="#">הערכה</a></li>
+                </ul>
+                <section id="alfa2">
+                    <ul>
+                        <li><a class="riboa4" href="#">פיתוח תרגילים</a></li>
+                        <li><a class="riboa4" href="#">פיתוח יח"ל</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="pitohach">
+                <h3 class="row small center wow fadeInDown top__element">פיתוח סגלים</h3>
+                <section id="pitohach1">
+                    <ul class="row small center wow fadeInDown top__element">
+                        <li><a class="riboa5" href="#">פיתוח<br> סגלים</a></li>
+                        <li><a class="riboa5" href="#">חניכה</a></li>
+                    </ul>
+                </section>
+            </section>
+            <h3 class="row small center wow fadeInDown top__element">סביבת למידה</h3>
+            <section id="sviva">
+                <ul>
+                    <li><a class="riboa6" href="#">האקתון</a></li>
+                    <li><a class="riboa6" href="#">אמצעי הדרכה</a></li>
+                </ul>
+            </section>
+            <h3 class="row small center wow fadeInDown top__element">ניהול הדרכה</h3>
+            <section id="nihol">
+                <ul class="row small center wow fadeInDown top__element">
+                    <li><a class="riboa7" href="#">ניהול הדרכה</a></li>
+                    <li><a class="riboa7" href="#">תל"ב- חסר</a></li>
+                    <li><a class="riboa7" href="#">ניהול ידע- חסר</a></li>
+                </ul>
+            </section>
+            <h3 class="row small center wow fadeInDown top__element">חדשנות בלמידה</h3>
+            <section id="hadsanot">
+                <ul class="row small center wow fadeInDown top__element">
+                    <li><a class="riboa8" href="#">האקתון</a></li>
+                    <li><a class="riboa8" href="#">טכנולוגיות למידה</a></li>
+                    <li><a class="riboa8" href="#">טכנולוגיות למידה בצה"ל</a></li>
+                </ul>
+            </section>
+
+        </section>
+
+
+        <section class="parallax1" id="thasara">
+            <h2 class="parallaxTitle">תכני העשרה</h2>
+        </section>
+          <section class="parallextext" id="hasara">
+            <ul>
+                <li><a class="riboa1" href="#">הכובעים של דה בונו</a></li>
+                <li><a class="riboa1" href="#">מאמר למידה משמעותית</a></li>
+                <li><a class="riboa1" href="#">מאמר על סגנונות למידה</a></li>
+                <li><a class="riboa4" href="#">משחוק</a></li>
+                <li><a class="riboa4" href="#">יריד שיטות למידה</a></li>
+            </ul>
+      
+        </section>
+
+        <section class="parallax1" id="tatrim">
+            <h2 class="parallaxTitle">אתרים מומלצים</h2>
+        </section>
+
+        <section class="parallextext" id="atrim">
+            <h3 class="row small center wow fadeInDown top__element">בלוגים ואתרים מובילים בתחומי הלמידה וההדרכה</h3>
+            <section class="atrima">
+                <a href="https://digitalpedagogy.co/" class="row small center wow fadeInDown top__element">כלים קטנים גדולים</a>
+                <p class="row small center wow fadeInDown top__element">האתר של אפרת מעטוף- מדריכת פדגוגיה דיגטלית. אתר מעולה שמסביר על כלים, תוספים ומיני ירקות בתחום טכנולוגיות הלמידה. לשמור במועדפים!</p>
+
+            </section>
+            <section class="atrima">
+                <a href="http://hadracha1.blogspot.co.il/" class="row small center wow fadeInDown top__element">קידוח הדרכה</a>
+                <p class="row small center wow fadeInDown top__element">לא חותמת שם על כל מילה, אבל תמיד מעניין ויחסית מתעדכן. שווה קריאה.</p>
+            </section>
+            <section class="atrima">
+                <a href="http://www.lotem.co.il/hr/" class="row small center wow fadeInDown top__element">לוטם</a>
+                <p class="row small center wow fadeInDown top__element">אחת מהחברות המובילות בתחום. מייחבת את עובדיה לכתוב כל הזמן- תרוויחו מכך.</p>
+
+            </section>
+            <section class="atrima">
+                <a href="http://methodic.co.il/PublicUI/Default.aspx" class="row small center wow fadeInDown top__element">מתודיקה</a>
+                <p class="row small center wow fadeInDown top__element">עוד חברה מרכזית. הכנסו למרכז הידע שלהם והרשמו לניוזלטר.</p>
+
+            </section>
+            <h3 class="row small center wow fadeInDown top__element">המלצות על קבוצות פייסבוק</h3>
+            <section class="atrima1">
+                <a href="https://www.facebook.com/groups/sratim8/" class="row small center wow fadeInDown top__element">סרטונים למנחים ולמרצים</a>
+                <p>בקבוצה מעלים כל מיני סטרונים קצרים המתאימים לשימושים שונים בסדנאות שונות. מאגר סרטים עצום. מתעדכן באופן תדיר ותמיד אפשר למצוא בו משהו וגם לבקש הפניות וכו'. דרך אגב, כשמתחברים לפייסבוק דרך הכרום ולא באמצעות האפליקציה, ניתן לבצע חיפוש פנימי בתוך הקבוצה- יעיל מאוד במקרה הזה!</p>
+
+            </section>
+            <section class="atrima1">
+                <a href="https://www.facebook.com/groups/lemidairgunit/" class="row small center wow fadeInDown top__element">למידה ארגונית</a>
+                <p class="row small center wow fadeInDown top__element">כי אתם חלק מהקהילה ענקית, של מנהלי הדרכה, מפתחי הדרכה ויועצים ארגוניים ולכולם אותן דילמות ואפשר לחלוק רעיונות, לשאול שאלות ולקבל עצות מהמובלים בתחום. מי שם? ערן גל, רינתיה ברוכים..</p>
+            </section>
+            <section class="atrima">
+                <a href="https://www.facebook.com/groups/306190656145215/" class="row small center wow fadeInDown top__element">פיתוח הדרכה</a>
+                <p class="row small center wow fadeInDown top__element">אותו כנ"ל. מעט יותר ממוקד. יש שם תמיד הצעות עבודה מעניינות כך שתישארו מעודכנים ותמשיכו לכוון גבוה..</p>
+            </section>
+            <section class="atrima">
+                <a href="https://www.facebook.com/groups/israel.education/" class="row small center wow fadeInDown top__element">מנהלי הדרכה, מנהלי משאבי אנוש, ומנהלי פיתוח אירגוני</a>
+                <p class="row small center wow fadeInDown top__element">על אותו רעיון.. קצת פחות פעילה ביחס לשאר. כמו פיתוח הדרכה זו קבוצה סגורה.. אם תהיה לכם בעיה (מה שלא סביר להניח) תעדכנו אותי..</p>
+            </section>
+            <section class="atrima">
+                <a href="https://www.facebook.com/groups/998668890149944/" class="row small center wow fadeInDown top__element">מצגות, משחקים לסדנאות, חומרי רקע, דפים למשתתף, שאלונים</a>
+                <p class="row small center wow fadeInDown top__element">כן יש קבוצה כזו.. ממניעים אלטוראיסטיים לחלוטין ( או אקסצביסיוניסטיים אם נהיה קצת יותר ספקנים) אנשים מעלים כל מיני חומרים נחמדים לקבוצה הזו.</p>
+
+            </section>
+        </section>
+        <div id="doifitDiv"></div>
+        <section class="parallax1" id="loaca">
+            <h2 class="parallaxTitle">לוח שיתוף</h2>
+        </section>
+        <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+            <p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/r37nq7lhef82" frameborder="0" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p>
+            <div style="padding:8px;text-align:right;margin:0;">
+                <a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://resources.padletcdn.com/assets/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline" alt="נוצר בעזרת Padlet"></a>
+            </div>
+        </div>
+
+        <section class="parallax1" id="do-i-fit-title">
+            <h2 class="parallaxTitle">לו"ז שבועי </h2>
+        </section>
+    </div>
+
+</body>
+
+</html>
